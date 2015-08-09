@@ -428,7 +428,7 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "crushed-stone"
+				recipe = "tf-crushed-stone"
 			},
 		},
 		order = "a-b-c"

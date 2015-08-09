@@ -1049,7 +1049,7 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {type="item", name="crushed-stone", amount=1},
+      {type="item", name="tf-crushed-stone", amount=1},
       {type="fluid", name="hydrogen-chloride", amount=4},
     },
     result="calcium-chloride",

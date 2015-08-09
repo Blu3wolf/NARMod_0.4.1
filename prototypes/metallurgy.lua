@@ -53,7 +53,7 @@ data:extend(
 		results= {
 			{type="item", name="iron-concentrate", amount=10},
 			{type="item", name="subsidiary-ore", amount=2},
-			{type="item", name="crushed-stone", amount=8},
+			{type="item", name="tf-crushed-stone", amount=8},
 		},
 		enabled = "false"
 	},
@@ -205,7 +205,7 @@ data:extend(
 		results= {
 			{type="item", name="copper-concentrate", amount=10},
 			{type="item", name="subsidiary-ore", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
@@ -323,7 +323,7 @@ data:extend(
 		results= {
 			{type="item", name="copper-concentrate", amount=10},
 			{type="item", name="subsidiary-ore", amount=4},
-			{type="item", name="crushed-stone", amount=4},
+			{type="item", name="tf-crushed-stone", amount=4},
 			{type="item", name="sulfur", amount=2},
 		},
 		enabled = "false"
@@ -346,7 +346,7 @@ data:extend(
 		},
 		results= {
 			{type="item", name="lead-concentrate", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
@@ -434,7 +434,7 @@ data:extend(
 		},
 		results= {
 			{type="item", name="zinc-concentrate", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
@@ -640,7 +640,7 @@ data:extend(
 		},
 		results= {
 			{type="item", name="tin-concentrate", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
@@ -739,7 +739,7 @@ data:extend(
 		},
 		results= {
 			{type="item", name="gold-concentrate", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
@@ -872,7 +872,7 @@ data:extend(
 		},
 		results= {
 			{type="item", name="cobalt-concentrate", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
@@ -935,7 +935,7 @@ data:extend(
 		},
 		results= {
 			{type="item", name="titanium-concentrate", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
@@ -1073,7 +1073,7 @@ data:extend(
 		},
 		results= {
 			{type="item", name="bauxite-concentrate", amount=5},
-			{type="item", name="crushed-stone", amount=5},
+			{type="item", name="tf-crushed-stone", amount=5},
 		},
 		enabled = "false"
 	},
