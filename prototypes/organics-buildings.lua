@@ -1,174 +1,35 @@
 require ("prototypes.pipeConnectors")
 require ("util")
 
---data.raw["item"]["tf-field"].subgroup = organic-fields
+data.raw["item"]["tf-field"].subgroup = "organic-fields"
+data.raw["item"]["tf-field"].stack_size = 1
+data.raw["recipe"]["tf-field"].ingredients = {
+	{"wooden-chest", 1},
+	{"burner-inserter", 1}
+}
+data.raw["item"]["tf-fieldmk2"].subgroup = "organic-fields"
+data.raw["item"]["tf-fieldmk2"].stack_size = 1
+data.raw["recipe"]["tf-fieldmk2"].ingredients = {
+	{"advanced-circuit",20},
+	{"copper-cable",40},
+	{"steel-plate",20}
+}
+data.raw["recipe"]["tf-fieldmk2"].energy_required = 30
+data.raw["item"]["tf-cokery"].subgroup = "alt-production"
+data.raw["item"]["tf-cokery"].stack_size = 5
+data.raw["recipe"]["tf-cokery"].ingredients = {
+	{"iron-plate",10},
+	{"iron-gear-wheel",5},
+	{"stone-furnace",2}
+}
+data.raw["recipe"]["tf-cokery"].energy_required = 10
+data.raw["assembling-machine"]["tf-cokery"].crafting_categories = "cokery-crafting"
+
 
 data:extend(
 {
 
--- TREEFARM
-
-	{
-		type = "item",
-		name = "tf-field",
-		icon = "__Treefarm-Lite__/graphics/icons/field.png",
-		flags = {"goes-to-quickbar"},
-		subgroup = "organic-fields",
-		order = "a[field]",
-		place_result = "tf-field",
-		stack_size = 1
-	},
-
-	{
-		type = "recipe",
-		name = "tf-field",
-		ingredients = {{"wooden-chest",1},{"burner-inserter",1}},
-		result = "tf-field",
-		energy_required = 10,
-		result_count = 1,
-		enabled = "true"
-	},
 	
-	{
-		type = "item",
-		name = "tf-fieldmk2",
-		icon = "__Treefarm-Lite__/graphics/icons/fieldmk2.png",
-		flags = {"goes-to-quickbar"},
-		subgroup = "organic-fields",
-		order = "b[fieldmk2]",
-		place_result = "tf-fieldmk2Overlay",
-		stack_size = 1
-	},
-	
-		{
-		type = "recipe",
-		name = "tf-fieldmk2",
-		ingredients = {
-			{"advanced-circuit",20},
-			{"copper-cable",40},
-			{"steel-plate",20}
-		},
-		result = "tf-fieldmk2",
-		energy_required = 30,
-		result_count = 1,
-		enabled = "false"
-	},
-	
-	-- COKERY
-
-	{
-		type = "item",
-		name = "cokery",
-		icon = "__Treefarm-AC__/graphics/icons/cokery.png",
-		flags = {"goes-to-quickbar"},
-		subgroup = "alt-production",
-		order = "a[cokery]",
-		place_result = "tf-cokery-dummy",
-		stack_size = 5
-	},
-	
-		{
-		type = "recipe",
-		name = "tf-cokery",
-		ingredients = {
-			{"iron-plate",10},
-			{"iron-gear-wheel",5},
-			{"stone-furnace",2}
-		},
-		result = "tf-cokery",
-		energy_required = 10,
-		result_count = 1,
-		enabled = "false"
-	},
-
-{
-		type = "assembling-machine",
-		name = "tf-cokery",
-		icon = "__Treefarm-AC__/graphics/icons/cokery.png",
-		flags = {"placeable-neutral","placeable-player", "player-creation"},
-		order = "a[cokery]",
-		minable = {hardness = 0.2, mining_time = 0.5, result = "tf-cokery"},
-		max_health = 200,
-		corpse = "big-remnants",
-		resistances = {{type = "fire", percent = 70}},
-		collision_box = {{-1.4, -2.0}, {1.4, 2.4}},
-		selection_box = {{-1.5, -2.5}, {1.5, 2.5}},
-		module_slots = 2,
-		allowed_effects = {"consumption", "speed"},
-
-		animation =
-		{
-			north =
-			{
-				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
-				width = 100,
-				height = 160,
-				frame_count = 1,
-				line_length = 1,
-				shift = {0, 0}
-			},
-			south =
-			{
-				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
-				width = 100,
-				height = 160,
-				frame_count = 1,
-				line_length = 1,
-				shift = {0, 0}
-			},
-			west =
-			{
-				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
-				width = 100,
-				height = 160,
-				frame_count = 1,
-				line_length = 1,
-				shift = {0, 0}
-			},
-			east =
-			{
-				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
-				width = 100,
-				height = 160,
-				frame_count = 1,
-				line_length = 1,
-				shift = {0, 0}
-			}				
-		},
-		working_visualisations =
-		{
-
-			{
-				north_position = { 0.0,  0.0},
-				south_position = { 0.0,  0.0},
-				west_position  = { 0.0,  0.0},	--{ 1.3, -2.0},
-				east_position  = { 0.0,  0.0},	--{ 1.3, -2.0},
-			
-				animation =
-				{
-					filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-anim.png",
-					frame_count = 28,
-					line_length = 14,
-					width = 100,
-					height = 160,
-					scale = 1.0,
-					shift = {0, 0},
-					animation_speed = 0.1
-				}
-			}
-		},
-		crafting_categories = {"cokery-crafting"},
-		energy_source =
-		{
-			type = "electric",
-			input_priority = "secondary",
-			usage_priority = "secondary-input",
-			emissions = 6 / 3
-		},
-		energy_usage = "6W",
-		crafting_speed = 2,
-		ingredient_count = 1
-	},
 
 	-- BIOREACTOR
 	

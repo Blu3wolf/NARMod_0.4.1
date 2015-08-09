@@ -1,32 +1,27 @@
--- DISABLE TREEFARM AT START OF GAME
+data.raw["item"]["tf-germling"].subgroup = "organic-fields"
+data.raw["item"]["tf-germling"].stack_size = 50
+data.raw["item"]["tf-coral-seed"].subgroup = "organic-fields"
+data.raw["item"]["tf-charcoal"].subgroup = "cokery-crafting"
+data.raw["recipe"]["tf-charcoal"].category = "cokery-crafting"
+data.raw["recipe"]["tf-charcoal"].subgroup = "cokery-crafting"
+data.raw["recipe"]["tf-charcoal"].ingredients = {{"raw-wood",10}}
+data.raw["recipe"]["tf-charcoal"].result_count = 9
+data.raw["recipe"]["tf-coal"].hidden = true
+data.raw["recipe"]["tf-coal-2"].hidden = true
+data.raw["item"]["tf-coke-coal"].subgroup = "cokery-crafting"
+data.raw["recipe"]["tf-coke-coal"].category = "cokery-crafting"
+data.raw["item"]["tf-ash"].subgroup = "cokery-crafting"
+data.raw["item"]["tf-ash"].stack_size = 50
+data.raw["recipe"]["tf-ash"].category = "cokery-crafting"
 
---data.raw["recipe"]["tf-field"].enabled = false
-data.raw["recipe"]["tf-germling"].enabled = false
-data.raw["recipe"]["tf-coral-seed"].enabled = false
+
+	
+	
+
 
 data:extend(
 {
-	-- GERMLING --
 	
-	{
-		type = "item",
-		name = "germling",
-		icon = "__NARMod__/graphics/icons/germling.png",
-		flags = {"goes-to-main-inventory"},
-		subgroup = "organic-fields",
-		order = "b[germling]",
-		place_result = "germling",
-		fuel_value = "1MJ",
-		stack_size = 50
-	},
-	
-	{
-		type = "recipe",
-		name = "germling",
-		ingredients = {{"raw-wood",1}},
-		result = "germling",
-		result_count = 1
-	},
 	
 	-- COMPOUND FERTILIZER
 	
@@ -210,77 +205,6 @@ data:extend(
 		stack_size = 100
 	},
 	
-	-- CHARCOAL
-	
-	{
-		type = "item",
-		name = "charcoal",
-		icon = "__NARMod__/graphics/icons/charcoal.png",
-		flags = {"goes-to-main-inventory"},
-		fuel_value = "6MJ",
-		subgroup = "cokery-crafting",
-		order = "b[charcoal]",
-		stack_size = 50
-	},
-	
-	{
-		type = "recipe",
-		name = "charcoal",
-		icon = "__NARMod__/graphics/icons/charcoal.png",
-		category = "cokery-crafting",
-		energy_required = 18,
-		ingredients = {{"raw-wood",10}},
-		result = "charcoal",
-		result_count = 10,
-		enabled = "false"
-	},
-	
-	-- COKE --
-	
-	{
-		type = "item",
-		name = "coke",
-		icon = "__NARMod__/graphics/icons/coke.png",
-		flags = {"goes-to-main-inventory"},
-		fuel_value = "10MJ",
-		subgroup = "cokery-crafting",
-		order = "b[coke]",
-		stack_size = 50
-	},
-	
-	{
-		type = "recipe",
-		name = "coke",
-		category = "cokery-crafting",
-		energy_required = 18,
-		ingredients = {{"coal",10}},
-		result = "coke",
-		result_count = 10,
-		enabled = "false"
-	},
-	
-	-- ASH --
-	
-		{
-		type = "item",
-		name = "ash",
-		icon = "__NARMod__/graphics/icons/ash.png",
-		flags = {"goes-to-main-inventory"},
-		subgroup = "cokery-crafting",
-		order = "b[ash]",
-		stack_size = 50
-	},
-	
-	{
-		type = "recipe",
-		name = "ash",
-		category = "cokery-crafting",
-		energy_required = 10,
-		ingredients = {{"raw-wood",5}},
-		result = "ash",
-		result_count = 5,
-		enabled = "false"
-	},
 	
 	-- POTASH --
 	
