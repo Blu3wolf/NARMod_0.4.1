@@ -1,6 +1,8 @@
 require ("prototypes.pipeConnectors")
 require ("util")
 
+--data.raw["item"]["tf-field"].subgroup = organic-fields
+
 data:extend(
 {
 
@@ -8,60 +10,20 @@ data:extend(
 
 	{
 		type = "item",
-		name = "field",
-		icon = "__NARMod__/graphics/icons/field.png",
+		name = "tf-field",
+		icon = "__Treefarm-Lite__/graphics/icons/field.png",
 		flags = {"goes-to-quickbar"},
 		subgroup = "organic-fields",
 		order = "a[field]",
-		place_result = "field-2",
+		place_result = "tf-field",
 		stack_size = 1
 	},
 
 	{
-		type = "furnace",
-		name = "field-2",
-		max_health = 100,
-		icon = "__NARMod__/graphics/icons/field.png",
-		flags = {"placeable-neutral", "player-creation"},
-		crafting_categories = {"treefarm-mod-dummy"},
-		minable = {mining_time = 1,result = "field"},
-		collision_box = {{-0.65,-0.75},{0.40,0.25}},
-		selection_box = {{0.0,-1.0},{8.0,8.0}},
-		result_inventory_size = 1,
-		energy_usage = "180kW",
-		crafting_speed = 1,
-		source_inventory_size = 1,
-		energy_source =
-		{
-			type = "burner",
-			effectivity = 1,
-			fuel_inventory_size = 1
-		},
-		animation =
-		{
-			filename = "__NARMod__/graphics/entity/field/field.png",
-			priority = "extra-high",
-			width = 512,
-			height = 512,
-			frame_count = 1,
-			shift = {0.0, -0.25}
-		},
-		working_visualisations =
-		{
-			filename = "__NARMod__/graphics/icons/empty.png",
-			priority = "extra-high",
-			width = 32,
-			height = 32,
-			frame_count = 1,
-			shift = {0.0, 0.0}
-		}
-	},
-	
-	{
 		type = "recipe",
-		name = "field",
+		name = "tf-field",
 		ingredients = {{"wooden-chest",1},{"burner-inserter",1}},
-		result = "field",
+		result = "tf-field",
 		energy_required = 10,
 		result_count = 1,
 		enabled = "true"
@@ -69,86 +31,24 @@ data:extend(
 	
 	{
 		type = "item",
-		name = "fieldmk2",
-		icon = "__NARMod__/graphics/icons/fieldmk2.png",
+		name = "tf-fieldmk2",
+		icon = "__Treefarm-Lite__/graphics/icons/fieldmk2.png",
 		flags = {"goes-to-quickbar"},
 		subgroup = "organic-fields",
-		order = "a[fieldmk2]",
-		place_result = "fieldmk2Overlay",
+		order = "b[fieldmk2]",
+		place_result = "tf-fieldmk2Overlay",
 		stack_size = 1
-	},
-	
-	{
-		type = "smart-container",
-		name = "field",
-		max_health = 100,
-		order = "a[field]",
-		icon = "__NARMod__/graphics/icons/field.png",
-		flags = {"placeable-neutral", "player-creation"},
-		minable = {mining_time = 1,result = "field"},
-		collision_box = {{-0.65,-0.75},{0.40,0.25}},
-		selection_box = {{0.0,-1.0},{8.0,8.0}},
-		inventory_size = 3,
-		picture = 	{
-						filename = "__NARMod__/graphics/entity/field/field.png",
-						priority = "extra-high",
-						width = 512,
-						height = 512,
-						shift = {0.00, -0.25}
-					}
-	},
-
-	-- FIELD-MK2
-	{
-		type = "logistic-container",
-		name = "fieldmk2",
-		logistic_mode = "requester",
-		order = "a[fieldmk2]",
-		max_health = 100,
-		icon = "__NARMod__/graphics/icons/fieldmk2.png",
-		flags = {"placeable-neutral", "player-creation"},
-		minable = {mining_time = 1,result = "fieldmk2"},
-		collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-		selection_box = {{-1, -1}, {1, 1}},
-		drawing_box = {{-2.8, -0.5}, {0.5, 0.5}},
-		inventory_size = 2,
-		picture = 	{
-						filename = "__NARMod__/graphics/entity/fieldmk2/fieldmk2.png",
-						priority = "extra-high",
-						width = 70,
-						height = 170,
-						shift = {0.0, -1.5}
-					}
-	},
-
-	{
-		type = "container",
-		name = "fieldmk2Overlay",
-		max_health = 100,
-		icon = "__NARMod__/graphics/icons/fieldmk2.png",
-		flags = {"placeable-neutral", "player-creation"},
-		minable = {mining_time = 1,result = "fieldmk2"},
-		collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-		selection_box = {{-1, -1}, {1, 1}},
-		inventory_size = 1,
-		picture = 	{
-						filename = "__NARMod__/graphics/entity/fieldmk2/fieldmk2Overlay.png",
-						priority = "extra-high",
-						width = 640,
-						height = 640,
-						shift = {0.0, 0.0}
-					}
 	},
 	
 		{
 		type = "recipe",
-		name = "fieldmk2",
+		name = "tf-fieldmk2",
 		ingredients = {
 			{"advanced-circuit",20},
 			{"copper-cable",40},
 			{"steel-plate",20}
 		},
-		result = "fieldmk2",
+		result = "tf-fieldmk2",
 		energy_required = 30,
 		result_count = 1,
 		enabled = "false"
@@ -159,23 +59,23 @@ data:extend(
 	{
 		type = "item",
 		name = "cokery",
-		icon = "__NARMod__/graphics/icons/cokery.png",
+		icon = "__Treefarm-AC__/graphics/icons/cokery.png",
 		flags = {"goes-to-quickbar"},
 		subgroup = "alt-production",
 		order = "a[cokery]",
-		place_result = "cokery",
+		place_result = "tf-cokery-dummy",
 		stack_size = 5
 	},
 	
 		{
 		type = "recipe",
-		name = "cokery",
+		name = "tf-cokery",
 		ingredients = {
 			{"iron-plate",10},
 			{"iron-gear-wheel",5},
 			{"stone-furnace",2}
 		},
-		result = "cokery",
+		result = "tf-cokery",
 		energy_required = 10,
 		result_count = 1,
 		enabled = "false"
@@ -183,10 +83,11 @@ data:extend(
 
 {
 		type = "assembling-machine",
-		name = "cokery",
-		icon = "__NARMod__/graphics/icons/cokery.png",
+		name = "tf-cokery",
+		icon = "__Treefarm-AC__/graphics/icons/cokery.png",
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
-		minable = {hardness = 0.2, mining_time = 0.5, result = "cokery"},
+		order = "a[cokery]",
+		minable = {hardness = 0.2, mining_time = 0.5, result = "tf-cokery"},
 		max_health = 200,
 		corpse = "big-remnants",
 		resistances = {{type = "fire", percent = 70}},
@@ -199,7 +100,7 @@ data:extend(
 		{
 			north =
 			{
-				filename = "__NARMod__/graphics/entity/cokery/cokery-idle.png",
+				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
 				width = 100,
 				height = 160,
 				frame_count = 1,
@@ -208,7 +109,7 @@ data:extend(
 			},
 			south =
 			{
-				filename = "__NARMod__/graphics/entity/cokery/cokery-idle.png",
+				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
 				width = 100,
 				height = 160,
 				frame_count = 1,
@@ -217,7 +118,7 @@ data:extend(
 			},
 			west =
 			{
-				filename = "__NARMod__/graphics/entity/cokery/cokery-idle.png",
+				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
 				width = 100,
 				height = 160,
 				frame_count = 1,
@@ -226,7 +127,7 @@ data:extend(
 			},
 			east =
 			{
-				filename = "__NARMod__/graphics/entity/cokery/cokery-idle.png",
+				filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-idle.png",
 				width = 100,
 				height = 160,
 				frame_count = 1,
@@ -245,7 +146,7 @@ data:extend(
 			
 				animation =
 				{
-					filename = "__NARMod__/graphics/entity/cokery/cokery-anim.png",
+					filename = "__Treefarm-AC__/graphics/entities/cokery/cokery-anim.png",
 					frame_count = 28,
 					line_length = 14,
 					width = 100,
@@ -273,25 +174,25 @@ data:extend(
 	
 	{
 		type = "item",
-		name = "bioreactor",
-		icon = "__NARMod__/graphics/icons/bioreactor.png",
+		name = "tf-bioreactor",
+		icon = "__Treefarm-AC__/graphics/icons/bioreactor.png",
 		flags = {"goes-to-quickbar"},
 		subgroup = "organic-production",
 		order = "a[bioreactor]",
-		place_result = "bioreactor",
+		place_result = "tf-bioreactor",
 		stack_size = 3
 	},
 	
 		{
 		type = "recipe",
-		name = "bioreactor",
+		name = "tf-bioreactor",
 		ingredients = {
 			{"assembling-machine-2",1},
 			{"storage-tank-2",4},
 			{"steel-plate",5},
 			{"electronic-circuit",10}
 		},
-		result = "bioreactor",
+		result = "tf-bioreactor",
 		energy_required = 20,
 		enabled = "false",
 		result_count = 1
@@ -314,10 +215,10 @@ data:extend(
 
 {
 		type = "assembling-machine",
-		name = "bioreactor",
+		name = "tf-bioreactor",
 		icon = "__NARMod__/graphics/icons/bioreactor.png",
 		flags = {"placeable-neutral", "player-creation"},
-		minable = {hardness = 0.2, mining_time = 0.5, result = "bioreactor"},
+		minable = {hardness = 0.2, mining_time = 0.5, result = "tf-bioreactor"},
 		max_health = 100,
 		corpse = "big-remnants",
 		fluid_boxes =

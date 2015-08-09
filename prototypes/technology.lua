@@ -267,7 +267,7 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "cokery"
+				recipe = "tf-cokery"
 			},
 			{
 				type = "unlock-recipe",
@@ -2117,7 +2117,7 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "bioreactor"
+				recipe = "tf-bioreactor"
 			},
 			{
 				type = "unlock-recipe",
@@ -2390,7 +2390,7 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "fieldmk2"
+				recipe = "tf-fieldmk2"
 			}
 		},
 		prerequisites = {

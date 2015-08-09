@@ -1,4 +1,6 @@
-data.raw["recipe"]["tf-field"].enabled = false
+-- DISABLE TREEFARM AT START OF GAME
+
+--data.raw["recipe"]["tf-field"].enabled = false
 data.raw["recipe"]["tf-germling"].enabled = false
 data.raw["recipe"]["tf-coral-seed"].enabled = false
 
