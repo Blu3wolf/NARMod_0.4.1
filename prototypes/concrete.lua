@@ -1,3 +1,9 @@
+data.raw["recipe"]["tf-crushed-stone"].category = crushing
+data.raw["recipe"]["tf-crushed-stone"].energy_required = 10
+data.raw["recipe"]["tf-crushed-stone"].subgroup = "raw-ores"
+data.raw["recipe"]["tf-crushed-stone"].result_count = 1
+
+
 data:extend({	
 	
 		--------------- STONE PROCESSING ---------------
@@ -16,7 +22,7 @@ data:extend({
 	
 	{
 		type = "item",
-		name = "crushed-stone",
+		name = "tf-crushed-stone",
 		icon = "__base__/graphics/icons/stone.png",
 		flags = {"goes-to-main-inventory"},
 		subgroup = "raw-ores",
@@ -24,20 +30,6 @@ data:extend({
 		stack_size = 50
 	},
 	
-	{
-		type = "recipe",
-		name = "crushed-stone",
-		category = "crushing",
-		subgroup = "raw-ores",
-		enabled = false,
-		energy_required = 10,
-		ingredients= {
-			{type="item",name="stone", amount=10},
-		},
-		results= {
-			{type="item", name="crushed-stone", amount=10},
-		},
-	},
 	
 	-- STONE SORTER
 	
@@ -159,7 +151,7 @@ data:extend({
 		energy_required= 2,
 		ingredients =
 		{
-			{type="item",name = "crushed-stone", amount = 2},
+			{type="item",name = "tf-crushed-stone", amount = 2},
 		},
 		results = {
 			{type="item",name = "quartz", amount = 1},
@@ -188,7 +180,7 @@ data:extend({
 		energy_required= 3,
 		ingredients =
 		{
-			{type="item",name = "crushed-stone", amount = 2},
+			{type="item",name = "tf-crushed-stone", amount = 2},
 		},
 		results = {
 			{type="item",name = "limestone", amount = 1},
@@ -217,7 +209,7 @@ data:extend({
 		energy_required = 4,
 		ingredients =
 		{
-			{type="item",name = "crushed-stone", amount = 3},
+			{type="item",name = "tf-crushed-stone", amount = 3},
 		},
 		results = {
 			{type="item",name = "clay", amount = 1},
@@ -246,7 +238,7 @@ data:extend({
 		energy_required= 5,
 		ingredients =
 		{
-			{type="item",name = "crushed-stone", amount = 5},
+			{type="item",name = "tf-crushed-stone", amount = 5},
 		},
 		results = {
 			{type="item",name = "salt", amount = 1},
@@ -275,7 +267,7 @@ data:extend({
 		energy_required= 5,
 		ingredients =
 		{
-			{type="item",name = "crushed-stone", amount = 3},
+			{type="item",name = "tf-crushed-stone", amount = 3},
 		},
 		results = {
 			{type="item",name = "phosphate-rock", amount = 1},
@@ -304,7 +296,7 @@ data:extend({
     {
 		{"limestone", 2},
 		{"clay", 1},
-		{"charcoal", 1},
+		{"tf-charcoal", 1},
 		{type="fluid", name="water", amount=1}
     },
 	result = "cement"
@@ -355,7 +347,7 @@ data:extend({
 	energy_required= 2,
     ingredients =
     {
-		{"crushed-stone", 3},
+		{"tf-crushed-stone", 3},
 		{"cement", 1},
 		{"iron-stick", 2},
 		{type="fluid", name="water", amount=1}

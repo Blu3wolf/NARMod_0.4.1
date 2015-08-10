@@ -271,15 +271,15 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "charcoal"
+				recipe = "tf-charcoal"
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "coke"
+				recipe = "tf-coke-coal"
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "ash"
+				recipe = "tf-ash"
 			},
 		},
 		order = "a-b-d",
@@ -428,7 +428,7 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "crushed-stone"
+				recipe = "tf-crushed-stone"
 			},
 		},
 		order = "a-b-c"

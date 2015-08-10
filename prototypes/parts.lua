@@ -225,7 +225,7 @@ data:extend(
     {
       {"lithium-perchlorate", 1},
       {"lithium-cobalt-oxide", 1},
-      {"charcoal", 1},
+      {"tf-charcoal", 1},
       {"plastic-bar", 1},
     },
     result = "battery",

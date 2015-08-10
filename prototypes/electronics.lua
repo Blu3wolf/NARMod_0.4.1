@@ -288,7 +288,7 @@ data:extend( {
     enabled = false,
     ingredients =
     {
-      {"charcoal", 1},
+      {"tf-charcoal", 1},
       {"tinned-copper-wire", 1},
     },
     result = "resistors",
