@@ -24,40 +24,18 @@ data.raw["recipe"]["tf-cokery"].ingredients = {
 }
 data.raw["recipe"]["tf-cokery"].energy_required = 10
 data.raw["assembling-machine"]["tf-cokery"].crafting_categories = "cokery-crafting"
+data.raw["item"]["tf-bioreactor"].subgroup = "organic-production"
+data.raw["item"]["tf-bioreactor"].stack_size = 3
+data.raw["recipe"]["tf-bioreactor"].ingredients = {
+	{"assembling-machine-2",1},
+	{"storage-tank-2",4},
+	{"steel-plate",5}
+}
+data.raw["recipe"]["tf-bioreactor"].energy_required = 20
 
 
 data:extend(
 {
-
-	
-
-	-- BIOREACTOR
-	
-	{
-		type = "item",
-		name = "tf-bioreactor",
-		icon = "__Treefarm-AC__/graphics/icons/bioreactor.png",
-		flags = {"goes-to-quickbar"},
-		subgroup = "organic-production",
-		order = "a[bioreactor]",
-		place_result = "tf-bioreactor",
-		stack_size = 3
-	},
-	
-		{
-		type = "recipe",
-		name = "tf-bioreactor",
-		ingredients = {
-			{"assembling-machine-2",1},
-			{"storage-tank-2",4},
-			{"steel-plate",5},
-			{"electronic-circuit",10}
-		},
-		result = "tf-bioreactor",
-		energy_required = 20,
-		enabled = "false",
-		result_count = 1
-	},
 
 -- HYDROPONIC FARM
 	
