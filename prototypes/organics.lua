@@ -1,19 +1,3 @@
-data.raw["item"]["tf-germling"].subgroup = "organic-fields"
-data.raw["item"]["tf-germling"].stack_size = 50
-data.raw["item"]["tf-coral-seed"].subgroup = "organic-fields"
-data.raw["item"]["tf-charcoal"].subgroup = "cokery-crafting"
-data.raw["recipe"]["tf-charcoal"].category = "cokery-crafting"
-data.raw["recipe"]["tf-charcoal"].subgroup = "cokery-crafting"
-data.raw["recipe"]["tf-charcoal"].ingredients = {{"raw-wood",10}}
-data.raw["recipe"]["tf-charcoal"].result_count = 9
-data.raw["recipe"]["tf-coal"].hidden = true
-data.raw["recipe"]["tf-coal-2"].hidden = true
-data.raw["item"]["tf-coke-coal"].subgroup = "cokery-crafting"
-data.raw["recipe"]["tf-coke-coal"].category = "cokery-crafting"
-data.raw["item"]["tf-ash"].subgroup = "cokery-crafting"
-data.raw["item"]["tf-ash"].stack_size = 50
-data.raw["recipe"]["tf-ash"].category = "cokery-crafting"
-
 
 	
 	
