@@ -44,4 +44,10 @@ data.raw["recipe"]["tf-bioreactor"].ingredients = {
 	{"steel-plate",5}
 }
 data.raw["recipe"]["tf-bioreactor"].energy_required = 20
-
+data.raw["item"]["tf-stone-crusher"].subgroup = "production-machine"
+data.raw["item"]["tf-stone-crusher"].stack_size = 5
+data.raw["recipe"]["tf-stone-crusher"].ingredients = {
+	  {"iron-plate", 5},
+	  {"basic-motor", 2},
+      {"iron-gear-wheel",8}
+    }

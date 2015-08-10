@@ -91,7 +91,7 @@ data:extend(
 		ingredients =
 		{
 			{type="item", name="iron-concentrate", amount=10},
-			{type="item", name="coke", amount=3},
+			{type="item", name="tf-coke-coal", amount=3},
 			{type="item", name="limestone", amount=1},
 		},
 		energy_required= 35,
@@ -243,7 +243,7 @@ data:extend(
 		ingredients =
 		{
 			{type="item", name="copper-concentrate", amount=10},
-			{type="item", name="coke", amount=3},
+			{type="item", name="tf-coke-coal", amount=3},
 			{type="item", name="limestone", amount=1},
 		},
 		energy_required= 35,
@@ -384,7 +384,7 @@ data:extend(
 		ingredients =
 		{
 			{type="item", name="lead-concentrate", amount=10},
-			{type="item", name="coke", amount=3},
+			{type="item", name="tf-coke-coal", amount=3},
 			{type="item", name="limestone", amount=1},
 		},
 		energy_required= 35,
@@ -608,7 +608,7 @@ data:extend(
 		{
 			{type="item", name="zinc-oxide", amount=20},
 			{type="item", name="lead-concentrate", amount=10},
-			{type="item", name="coke", amount=8},
+			{type="item", name="tf-coke-coal", amount=8},
 			{type="item", name="limestone", amount=2},
 		},
 		results= 
@@ -678,7 +678,7 @@ data:extend(
 		ingredients =
 		{
 			{type="item", name="tin-concentrate", amount=10},
-			{type="item", name="coke", amount=3},
+			{type="item", name="tf-coke-coal", amount=3},
 			{type="item", name="limestone", amount=1},
 		},
 		energy_required= 35,
@@ -823,7 +823,7 @@ data:extend(
 		ingredients =
 		{
 			{type="item", name="gold-ore", amount=10},
-			{type="item", name="coke", amount=3},
+			{type="item", name="tf-coke-coal", amount=3},
 		},
 		energy_required= 35,
 		enabled= "false",
@@ -906,7 +906,7 @@ data:extend(
 		ingredients =
 		{
 			{type="item", name="cobalt-concentrate", amount=10},
-			{type="item", name="coke", amount=3},
+			{type="item", name="tf-coke-coal", amount=3},
 			{type="fluid", name="ammonia", amount=5},
 			{type="fluid", name="hydrogen-sulfide", amount=5},
 			{type="fluid", name="hydrogen-gas", amount=5},
@@ -976,7 +976,7 @@ data:extend(
     ingredients =
     {
 		{type="item", name="titanium-concentrate", amount=10},
-		{type="item", name="coke", amount=3},
+		{type="item", name="tf-coke-coal", amount=3},
 		{type="fluid", name="chlorine", amount=2},
     },
 	results = {
@@ -1212,7 +1212,7 @@ data:extend(
 		},
 		ingredients= {
 			{type="fluid",name="molten-aluminium-oxide", amount=10},
-			{type="item",name="coke", amount=1},
+			{type="item",name="tf-coke-coal", amount=1},
 			
 		},
 		icon = "__NARMod__/graphics/icons/molten-aluminium.png",
@@ -1399,7 +1399,7 @@ data:extend(
     energy_required = 20,
     ingredients =
     {
-      {type="item", name="charcoal", amount=1},
+      {type="item", name="tf-charcoal", amount=1},
       {type="item", name="tungsten-oxide", amount=3},
     },
     results = 

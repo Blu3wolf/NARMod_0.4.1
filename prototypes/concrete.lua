@@ -296,7 +296,7 @@ data:extend({
     {
 		{"limestone", 2},
 		{"clay", 1},
-		{"charcoal", 1},
+		{"tf-charcoal", 1},
 		{type="fluid", name="water", amount=1}
     },
 	result = "cement"

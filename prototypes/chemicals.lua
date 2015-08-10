@@ -549,7 +549,7 @@ data:extend(
 		ingredients =
 		{
 		  {type="fluid", name="water", amount=3},
-		  {type="item", name="ash", amount=2},
+		  {type="item", name="tf-ash", amount=2},
 		},
 		results=
 		{
@@ -1130,7 +1130,7 @@ data:extend(
     {
       {type="item", name="quartz", amount=3},
 	  {type="item", name="raw-wood", amount=1},
-      {type="item", name="charcoal", amount=1},
+      {type="item", name="tf-charcoal", amount=1},
 	  {type="item", name="coal", amount=1}
     },
     result = "powdered-silicon",

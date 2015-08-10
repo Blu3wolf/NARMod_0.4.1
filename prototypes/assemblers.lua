@@ -1,15 +1,7 @@
 data.raw["assembling-machine"]["assembling-machine-2"].ingredient_count = 8
 data.raw["assembling-machine"]["assembling-machine-3"].ingredient_count = 8
 data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"crafting","workshop-crafting","crafting-with-fluid","advanced-crafting"}
-data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"crafting","workshop-crafting","crafting-with-fluid","advanced-crafting"},
-data.raw["item"]["tf-stone-crusher"].subgroup = "production-machine"
-data.raw["item"]["tf-stone-crusher"].stack_size = 5
-data.raw["recipe"]["tf-stone-crusher"].ingredients = {
-	  {"iron-plate", 5},
-	  {"basic-motor", 2},
-      {"iron-gear-wheel",8}
-    }
-
+data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"crafting","workshop-crafting","crafting-with-fluid","advanced-crafting"}
 
 data:extend(
 {
