@@ -2314,7 +2314,7 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "hydroponic-farm"
+				recipe = "tf-biolab"
 			},
 			{
 				type = "unlock-recipe",
