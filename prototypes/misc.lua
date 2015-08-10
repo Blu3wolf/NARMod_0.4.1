@@ -38,49 +38,5 @@ data:extend(
     },
 	result = "titanium-axe"
 	},
-	
-	{
-		type = "decorative",
-		name = "tf-overlay-green",
-		flags = {"placeable-neutral", "not-on-map"},
-		icon = "__NARMod__/graphics/entity/fieldmk2/tf-overlay-1.png",
-		subgroup = "grass",
-		order = "b[decorative]-b[tf-overlay-green]",
-		collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-		selectable_in_game = false,
-		render_layer = "radius-visualization",
-		pictures =
-		{
-			{
-				filename = "__NARMod__/graphics/entity/fieldmk2/tf-overlay-1.png",
-				width = 32,
-				height = 32,
-				shift = {-0.5, -0.5}
-			}
-		}
-	},
-	
-	{
-		type = "decorative",
-		name = "tf-overlay-red",
-		flags = {"placeable-neutral", "not-on-map"},
-		icon = "__NARMod__/graphics/entity/fieldmk2/tf-overlay-2.png",
-		subgroup = "grass",
-		order = "b[decorative]-b[tf-overlay-red]",
-		collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-		selectable_in_game = false,
-		render_layer = "radius-visualization",
-		pictures =
-		{
-			{
-				filename = "__NARMod__/graphics/entity/fieldmk2/tf-overlay-2.png",
-				width = 32,
-				height = 32,
-				shift = {-0.5, -0.5}
-			}
-		}
-	}
 }
 )

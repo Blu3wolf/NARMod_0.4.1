@@ -267,19 +267,19 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "cokery"
+				recipe = "tf-cokery"
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "charcoal"
+				recipe = "tf-charcoal"
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "coke"
+				recipe = "tf-coke-coal"
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "ash"
+				recipe = "tf-ash"
 			},
 		},
 		order = "a-b-d",
@@ -428,7 +428,7 @@ data:extend({
 			},
 			{
 				type = "unlock-recipe",
-				recipe = "crushed-stone"
+				recipe = "tf-crushed-stone"
 			},
 		},
 		order = "a-b-c"
@@ -2117,7 +2117,7 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "bioreactor"
+				recipe = "tf-bioreactor"
 			},
 			{
 				type = "unlock-recipe",
@@ -2314,7 +2314,7 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "hydroponic-farm"
+				recipe = "tf-biolab"
 			},
 			{
 				type = "unlock-recipe",
@@ -2390,7 +2390,7 @@ data:extend({
 		effects = {
 			{
 				type = "unlock-recipe",
-				recipe = "fieldmk2"
+				recipe = "tf-fieldmk2"
 			}
 		},
 		prerequisites = {

@@ -13,7 +13,7 @@ data:extend( {
     {
       {type="item", name="iron-plate", amount=3},
 	  {type="item", name="lq-copper-plate", amount=3},
-      {type="item", name="charcoal", amount=4}
+      {type="item", name="tf-charcoal", amount=4}
     },
     result = "shotgun-shell",
 	result_count = 3
@@ -32,7 +32,7 @@ data:extend( {
 	  {type="item", name="brass-plate", amount=2},
 	  {type="item", name="potassium-nitrate", amount=3},
 	  {type="item", name="sulfur", amount=2},
-      {type="item", name="charcoal", amount=1}
+      {type="item", name="tf-charcoal", amount=1}
     },
     result = "piercing-shotgun-shell",
 	result_count = 3,
@@ -167,7 +167,7 @@ data:extend( {
     {
       {type="item", name="iron-plate", amount=3},
 	  {type="item", name="lq-copper-plate", amount=2},
-      {type="item", name="charcoal", amount=3}
+      {type="item", name="tf-charcoal", amount=3}
     },
     result = "rifle-magazine",
     result_count = 3
@@ -232,7 +232,7 @@ data:extend( {
 	  {type="item", name="brass-plate", amount=2},
 	  {type="item", name="potassium-nitrate", amount=2},
 	  {type="item", name="sulfur", amount=1},
-      {type="item", name="charcoal", amount=1}
+      {type="item", name="tf-charcoal", amount=1}
     },
     result = "piercing-bullet-magazine",
     result_count = 3
@@ -638,7 +638,7 @@ data:extend( {
     ingredients =
     {
 	  {"potassium-nitrate", 7},
-	  {"charcoal", 2},
+	  {"tf-charcoal", 2},
 	  {"sulfur", 1},
     },
     result = "solid-rocket-fuel",

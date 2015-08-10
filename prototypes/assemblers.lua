@@ -1,84 +1,10 @@
 data.raw["assembling-machine"]["assembling-machine-2"].ingredient_count = 8
 data.raw["assembling-machine"]["assembling-machine-3"].ingredient_count = 8
 data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories = {"crafting","workshop-crafting","crafting-with-fluid","advanced-crafting"}
-data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"crafting","workshop-crafting","crafting-with-fluid","advanced-crafting"},
+data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"crafting","workshop-crafting","crafting-with-fluid","advanced-crafting"}
 
 data:extend(
 {
-	{
-		type = "item",
-		name = "crusher",
-		icon = "__NARMod__/graphics/icons/crusher.png",
-		flags = {"goes-to-quickbar"},
-		subgroup = "production-machine",
-		order = "a[crusher]",
-		place_result = "crusher",
-		stack_size = 5
-	},
-	
-	{
-    type = "recipe",
-    name = "crusher",
-    energy_required = 5,
-    enabled = "true",
-    ingredients =
-    {
-	  {"iron-plate", 5},
-	  {"basic-motor", 2},
-      {"iron-gear-wheel",8},
-    },
-    result = "crusher"
-  },
-	
-	{
-		type = "furnace",
-		name = "crusher",
-		icon = "__NARMod__/graphics/icons/crusher.png",
-		flags = {"placeable-neutral","player-creation"},
-		minable = {hardness = 0.2,mining_time = 0.5,result = "crusher"},
-		max_health = 100,
-		corpse = "big-remnants",
-		dying_explosion = "big-explosion",
-		module_slots = 1,
-		resistances = {{type = "fire",percent = 70}},
-		working_sound = {
-							sound = {
-										filename = "__base__/sound/assembling-machine-t1-1.ogg",
-										volume = 0.7
-									},
-							apparent_volume = 1.5
-						},
-		collision_box = {{-0.9,-0.9},{0.9,0.9}},
-		selection_box = {{-1.0,-1.0},{1.0,1.0}},
-		animation = {
-							filename = "__NARMod__/graphics/entity/stone-crusher/stone-crusher-off-anim.png",
-							priority = "high",
-							width = 65,
-							height = 78,
-							frame_count = 1,
-							animation_speed = 0.5,
-							shift = {0.0, -0.1}
-						},
-		working_visualisations = {
-							filename = "__NARMod__/graphics/entity/stone-crusher/stone-crusher-anim.png",
-							priority = "high",
-							width = 65,
-							height = 78,
-							frame_count = 11,
-							animation_speed = 0.18 / 2.5,
-							shift = {0.0, -0.1}
-						},
-		crafting_categories = {"crushing"},
-		result_inventory_size = 1,
-		source_inventory_size = 1,
-		crafting_speed = 1,
-		energy_source = {
-							type = "electric",
-							usage_priority = "secondary-input",
-							emissions = 0.05 / 1.5
-						},
-		energy_usage = "50kW"
-	},
 	
 	
 	 -- ELECTRIC FURNACE
