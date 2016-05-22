@@ -13,6 +13,13 @@ data.raw["item-subgroup"]["bob-roboport-parts"] = nil
 
 -- This removes bobs electronics products
 data.raw["item"]["wooden-board"] = nil
+data.raw["recipe"]["wooden-board"] = nil
+data.raw["recipe"]["wooden-board-synthetic"] = nil
+data.raw["item"]["basic-circuit-board"] = nil
+data.raw["recipe"]["basic-circuit-board"] = nil
+data.raw["item"]["electronic-circuit"] = nil
+data.raw["recipe"]["electronic-circuit"] = nil
+
 
 -- This removes the Bobs intermediate-products tab
 data.raw["item-group"]["bob-intermediate-products"] = nil
