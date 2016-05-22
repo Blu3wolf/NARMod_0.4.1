@@ -1,6 +1,27 @@
 
 
+-- This configures bobs electronics products
+
+data.raw["item"]["basic-circuit-board"].subgroup = "circuit-boards"
+data.raw["item"]["basic-circuit-board"].stack_size = 50
+data.raw["item"]["electronic-circuit"].subgroup = "circuit-boards"
+data.raw["item"]["electronic-circuit"].stack_size = 50
+
 --This removes the Bobs mods tabs
+
+--This removes the children of the Bobs resource products tab
+data.raw["item-subgroup"]["bob-ores"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-resource"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-resource-chemical"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-material"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-material-smelting"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-material-chemical"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-material-electrolysis"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-alloy"].group = "raw-materials"
+data.raw["item-subgroup"]["bob-alien-resource"].group = "raw-materials"
+
+--this removes the bobs materials tab
+data.raw["item-group"]["bob-resource-products"] = nil
 
 --This removes the children of the Bobs intermediate-products tab
 data.raw["item-subgroup"]["bob-intermediates"].group = "intermediate-products"
@@ -10,16 +31,6 @@ data.raw["item-subgroup"]["bob-electronic-boards"].group = "intermediate-product
 data.raw["item-subgroup"]["bob-gears"].group = "intermediate-products"
 data.raw["item-subgroup"]["bob-bearings"].group = "intermediate-products"
 data.raw["item-subgroup"]["bob-roboport-parts"] = nil
-
--- This removes bobs electronics products
-data.raw["item"]["wooden-board"] = nil
-data.raw["recipe"]["wooden-board"] = nil
-data.raw["recipe"]["wooden-board-synthetic"] = nil
-data.raw["item"]["basic-circuit-board"] = nil
-data.raw["recipe"]["basic-circuit-board"] = nil
-data.raw["item"]["electronic-circuit"] = nil
-data.raw["recipe"]["electronic-circuit"] = nil
-
 
 -- This removes the Bobs intermediate-products tab
 data.raw["item-group"]["bob-intermediate-products"] = nil
