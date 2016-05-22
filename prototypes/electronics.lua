@@ -31,29 +31,6 @@ data:extend(
     result_count = 5
   },
   
-  -- WOODEN SUBSTRATE
-  
-    {
-    type = "item",
-    name = "wooden-substrate",
-    icon = "__bobelectronics__/graphics/icons/wooden-board.png",
-    flags = {"goes-to-main-inventory"},
-    subgroup = "substrates",
-    order = "a",
-    stack_size = 50
-  },
-  
-    {
-    type = "recipe",
-    name = "wooden-substrate",
-    ingredients =
-    {
-      {"wood", 1},
-    },
-    result = "wooden-substrate",
-    result_count = 2
-  },
-  
   -- FIBERGLASS SUBSTRATE
   
   {
@@ -468,30 +445,6 @@ data:extend(
     {
 		{type="item", name="heatsink", amount=1},
     },
-  },
- 
- -- BASIC CIRCUIT BOARD
- 
-  {
-    type = "item",
-    name = "electronic-circuit",
-    icon = "__NARMod__/graphics/icons/electronics/basic-circuit-board.png",
-    flags = {"goes-to-main-inventory"},
-    subgroup = "circuit-boards",
-    order = "a",
-    stack_size = 50
-  },
-  
-    {
-    type = "recipe",
-	energy_required = 2,
-    name = "electronic-circuit",
-    ingredients =
-    {
-      {"wooden-substrate", 1},
-      {"copper-cable", 3},
-    },
-    result = "electronic-circuit",
   },
 
   -- ADVANCED CIRCUIT BOARD
