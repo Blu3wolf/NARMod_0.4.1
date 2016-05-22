@@ -18,7 +18,7 @@
   ["ash", "tf-ash"],
   ["charcoal", "tf-charcoal"],
   ["coke", "tf-coke"],
-  ["crushed-stone", tf-crushed-stone"],
+  ["crushed-stone", "tf-crushed-stone"],
   ["field", "tf-field"],
   ["germling", "tf-germling"],
   ["green-tree", "tree-04"],
