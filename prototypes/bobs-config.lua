@@ -11,6 +11,9 @@ data.raw["item-subgroup"]["bob-gears"].group = "intermediate-products"
 data.raw["item-subgroup"]["bob-bearings"].group = "intermediate-products"
 data.raw["item-subgroup"]["bob-roboport-parts"] = nil
 
+-- This removes bobs electronics products
+data.raw["item"]["wooden-board"] = nil
+
 -- This removes the Bobs intermediate-products tab
 data.raw["item-group"]["bob-intermediate-products"] = nil
 

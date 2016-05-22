@@ -1,4 +1,5 @@
 data.raw["item"]["copper-cable"].subgroup = "wiring"
+data.raw["item"]
 
 data:extend( {
 { 
@@ -36,7 +37,7 @@ data:extend( {
     {
     type = "item",
     name = "wooden-substrate",
-    icon = "__NARMod__/graphics/icons/electronics/wooden-substrate.png",
+    icon = "__bobelectronics__/graphics/icons/wooden-board.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "substrates",
     order = "a",
