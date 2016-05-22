@@ -35,7 +35,7 @@ data.raw["recipe"]["tf-cokery"].ingredients = {
 	{"stone-furnace",2}
 }
 data.raw["recipe"]["tf-cokery"].energy_required = 10
-data.raw["assembling-machine"]["tf-cokery"].crafting_categories = "cokery-crafting"
+data.raw["assembling-machine"]["tf-cokery"].crafting_categories = {"cokery-crafting"}
 data.raw["item"]["tf-bioreactor"].subgroup = "organic-production"
 data.raw["item"]["tf-bioreactor"].stack_size = 3
 data.raw["recipe"]["tf-bioreactor"].ingredients = {
@@ -64,7 +64,7 @@ data.raw["recipe"]["tf-biolab"].ingredients =
 	{"air-compressor", 2}
 }
 data.raw["assembling-machine"]["tf-biolab"].icon = "__NARMod__/graphics/icons/hydroponic-farm.png"
-data.raw["assembling-machine"]["tf-biolab"].crafting_categories = "hydroponic-farm-crafting"
+data.raw["assembling-machine"]["tf-biolab"].crafting_categories = {"hydroponic-farm-crafting"}
 --data.raw["assembling-machine"]["tf-biolab"].animation.filename = "__NARMod__/graphics/entity/hydroponic-farm/hydroponic-farm.png"
 data.raw["assembling-machine"]["tf-biolab"].animation = {
 	filename = "__NARMod__/graphics/entity/hydroponic-farm/hydroponic-farm.png",

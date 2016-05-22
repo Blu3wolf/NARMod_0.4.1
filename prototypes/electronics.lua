@@ -1,9 +1,8 @@
 data.raw["item"]["copper-cable"].subgroup = "wiring"
-data.raw["item"]
 
-data:extend( {
-{ 
-
+data:extend(
+{
+  {
 	-- PHOTOVOLTAIC CELL
 	
     type = "item",
