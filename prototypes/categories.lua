@@ -358,7 +358,7 @@ data:extend(
   {
     type = "item-group",
     name = "raw-materials",
-    order = "z",
+    order = "u",
     inventory_order = "a-b",
     icon = "__NARMod__/graphics/icons/technology/raw-materials.png",
   },
